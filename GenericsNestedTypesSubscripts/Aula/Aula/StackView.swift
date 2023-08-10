@@ -4,29 +4,18 @@
 //
 //  Created by Juliano Vaz on 09/08/23.
 //
-
 import SwiftUI
 
-// MARK: - GENERICS EXAMPLE
+//MARK: - GENERICS EXAMPLES
 
-class Stack<Element> {
+//MARK: - CLASS
+
+struct Stack<Element> {
     var items = [Element]()
     
-    func push(_ item: Element) {
-        items.append(item)
-    }
-    
-    func pop() -> Element? {
-        return items.popLast()
-    }
-    
-    func getItens () -> [Element] {
+    mutating func getItens() -> [Element] {
         return items
     }
-}
-
-struct Stack2<Element> {
-    var items = [Element]()
     
     mutating func push(_ item: Element) {
         items.append(item)
@@ -35,16 +24,14 @@ struct Stack2<Element> {
     mutating func pop() -> Element? {
         return items.popLast()
     }
-    
-    func getItens () -> [Element] {
-        return items
-    }
 }
 
+//MARK: - VIEW
+
 struct StackView: View {
-    
-    @State private var stack = Stack2<String>()
     @State private var newItem: String = ""
+    @State private var stack = Stack<String>()
+    @State private var stack2 = Stack<String>()
     @State private var poppedItem: String? = nil
     
     var body: some View {
@@ -53,21 +40,23 @@ struct StackView: View {
                 .border(.black)
                 .padding()
             
-            Button("Push Item") {
+            Button("Push item") {
                 stack.push(newItem)
                 newItem = ""
             }
             
-            Button("Pop Item") {
+            Button("Pop item") {
                 poppedItem = stack.pop()
             }
             
             Text("The current stack is: \(stack.getItens().joined(separator: ", "))")
-            if let poppedItem = poppedItem {
-                Text("And the last popped item was: \(poppedItem)")
+            
+            if let poppedItemSaved = poppedItem {
+                Text("The last popped item was: \(poppedItemSaved)")
             }
+            
             if stack.getItens().isEmpty {
-                Text("Empty :(")
+                Text("Empty :( ")
             }
         }
         .padding()

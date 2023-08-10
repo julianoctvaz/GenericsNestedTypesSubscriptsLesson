@@ -11,9 +11,7 @@ import SwiftUI
 struct AulaApp: App {
     var body: some Scene {
         WindowGroup {
-//            StackView()
-//            NestedTypesView()
-//            SubscriptView()
+            StackView()
         }
     }
 }

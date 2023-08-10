@@ -11,8 +11,6 @@
 		176FFFC92A847372001C3B52 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FFFC82A847372001C3B52 /* StackView.swift */; };
 		176FFFCB2A847374001C3B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176FFFCA2A847374001C3B52 /* Assets.xcassets */; };
 		176FFFCE2A847374001C3B52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176FFFCD2A847374001C3B52 /* Preview Assets.xcassets */; };
-		176FFFF72A847CF9001C3B52 /* NestedTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FFFF62A847CF9001C3B52 /* NestedTypesView.swift */; };
-		176FFFF92A847D19001C3B52 /* SubscriptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FFFF82A847D19001C3B52 /* SubscriptsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +38,6 @@
 		176FFFCD2A847374001C3B52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		176FFFD32A847374001C3B52 /* AulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AulaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		176FFFDD2A847374001C3B52 /* AulaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AulaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		176FFFF62A847CF9001C3B52 /* NestedTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedTypesView.swift; sourceTree = "<group>"; };
-		176FFFF82A847D19001C3B52 /* SubscriptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +88,6 @@
 			children = (
 				176FFFC62A847372001C3B52 /* AulaApp.swift */,
 				176FFFC82A847372001C3B52 /* StackView.swift */,
-				176FFFF62A847CF9001C3B52 /* NestedTypesView.swift */,
-				176FFFF82A847D19001C3B52 /* SubscriptsView.swift */,
 				176FFFCA2A847374001C3B52 /* Assets.xcassets */,
 				176FFFCC2A847374001C3B52 /* Preview Content */,
 			);
@@ -238,10 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				176FFFF92A847D19001C3B52 /* SubscriptsView.swift in Sources */,
 				176FFFC92A847372001C3B52 /* StackView.swift in Sources */,
 				176FFFC72A847372001C3B52 /* AulaApp.swift in Sources */,
-				176FFFF72A847CF9001C3B52 /* NestedTypesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
